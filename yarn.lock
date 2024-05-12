@@ -2308,7 +2308,7 @@ braces@^3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-browserslist@^4.22.2:
+browserslist@^4.22.2, browserslist@^4.23.0:
   version "4.23.0"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.23.0.tgz#8f3acc2bbe73af7213399430890f86c63a5674ab"
   integrity sha512-QW8HiM1shhT2GuzkvklfjcKDiWFXHOeFCIA/huJPwHsslwcydgk7X+z2zXpEijP98UCY7HbubZt5J2Zgvf0CaQ==
@@ -2679,6 +2679,8 @@ core-js-compat@^3.36.1:
   version "3.37.0"
   resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.37.0.tgz#d9570e544163779bb4dff1031c7972f44918dc73"
   integrity sha512-vYq4L+T8aS5UuFg4UwDhc7YNRWVeVZwltad9C/jV3R2LgVOpS9BDr7l/WL6BN0dbV3k1XejPTHqqEzJgsa0frA==
+  dependencies:
+    browserslist "^4.23.0"
 
 core-util-is@~1.0.0:
   version "1.0.3"
@@ -2929,9 +2931,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.668:
-  version "1.4.762"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.762.tgz#c29c9d47cf7cc128a9c364baa28adbadde95a47c"
-  integrity sha512-rrFvGweLxPwwSwJOjIopy3Vr+J3cIPtZzuc74bmlvmBIgQO3VYJDvVrlj94iKZ3ukXUH64Ex31hSfRTLqvjYJQ==
+  version "1.4.763"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.763.tgz#64f2041ed496fd6fc710b9be806fe91da9334f91"
+  integrity sha512-k4J8NrtJ9QrvHLRo8Q18OncqBCB7tIUyqxRcJnlonQ0ioHKYB988GcDFF3ZePmnb8eHEopDs/wPHR/iGAFgoUQ==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -5848,6 +5850,11 @@ react-native-paper@^5.12.3:
     "@callstack/react-theme-provider" "^3.0.9"
     color "^3.1.2"
     use-latest-callback "^0.1.5"
+
+react-native-safe-area-context@^4.10.1:
+  version "4.10.1"
+  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-4.10.1.tgz#29fb27395ff7dfa2fa38788a27226330d73a81cc"
+  integrity sha512-w8tCuowDorUkPoWPXmhqosovBr33YsukkwYCDERZFHAxIkx6qBadYxfeoaJ91nCQKjkNzGrK5qhoNOeSIcYSpA==
 
 react-native@0.74.1:
   version "0.74.1"
