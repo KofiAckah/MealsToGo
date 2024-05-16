@@ -1,52 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 import { Image } from "react-native";
-import { Card } from "react-native-paper";
 import { SvgXml } from "react-native-svg";
 
 import star from "../../../../assets/star";
 import open from "../../../../assets/open";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { Text } from "../../../components/typography/text.component";
-
-const RestaurantCard = styled(Card)`
-  background-color: ${(props) => props.theme.colors.bg.primary};
-`;
-
-const RestaurantCardCover = styled(Card.Cover)`
-  padding: ${(props) => props.theme.space[3]};
-  background-color: ${(props) => props.theme.colors.bg.primary};
-`;
-
-const Address = styled.Text`
-  font-family: ${(props) => props.theme.fonts.body};
-  font-size: ${(props) => props.theme.fontSizes.caption};
-`;
-
-const Info = styled.View`
-  padding: ${(props) => props.theme.space[3]};
-`;
-
-const Rating = styled.View`
-  flex-direction: row;
-  padding: ${(props) => props.theme.space[2]} 0;
-`;
-
-const Section = styled.View`
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-const SubSection = styled.View`
-  flex-direction: row;
-  align-items: center;
-`;
-
-const Icon = styled.Image`
-  width: 15px;
-  height: 15px;
-`;
+import {
+  Icon,
+  RestaurantCard,
+  RestaurantCardCover,
+  Address,
+  Info,
+  Rating,
+  Section,
+  SubSection,
+} from "./restaurant-info-card.styles";
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
