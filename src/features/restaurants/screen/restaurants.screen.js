@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Searchbar } from "react-native-paper";
+import { Searchbar, ActivityIndicator, MD2Colors } from "react-native-paper";
 import { FlatList } from "react-native";
 import styled from "styled-components";
 
@@ -13,19 +13,24 @@ const SearchContainer = styled.View`
 `;
 
 export const RestaurantsSceen = () => {
-  const restaurantContext = useContext(RestaurantsContext);
+  const { restaurants, isLoading, error } = useContext(RestaurantsContext);
   return (
     <SafeArea>
       <SearchContainer>
         <Searchbar placeholder="Search" />
       </SearchContainer>
+      {isLoading && (
+        <ActivityIndicator animating={true} color={MD2Colors.red800} />
+      )}
       <FlatList
-        data={restaurantContext.restaurants}
-        renderItem={() => (
-          <Spacer position="bottom" size="large">
-            <RestaurantInfoCard />
-          </Spacer>
-        )}
+        data={restaurants}
+        renderItem={({ item }) => {
+          return (
+            <Spacer position="bottom" size="large">
+              <RestaurantInfoCard restaurant={item} />
+            </Spacer>
+          );
+        }}
         keyExtractor={(item) => {
           item.name;
         }}
